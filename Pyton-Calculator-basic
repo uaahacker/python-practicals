@@ -1,0 +1,41 @@
+#######################
+#python Calculator :  #
+#Ubaid Ullah          #
+#Open source          #
+#######################
+
+print(""" 
+'A' for Addition.
+'S' for Subtraction.
+'M' for Multiplication.
+'D' for Division 
+""")
+repeat = "yes"
+for x in repeat.upper():
+
+    oper = input("Enter operator given: ").upper()
+
+    if  oper == 'A':
+        num1 = int(input('Enter a number: '))
+        num2 = int(input('Enter a number: '))
+        result = num1 + num2
+        print("Your Answer: {}".format(result))
+    elif oper == 'S':
+        num1 = int(input('Enter a number: '))
+        num2 = int(input('Enter a number: '))
+        result = num1 - num2
+        print("Your Answer: {}".format(result))
+    elif oper == 'M':
+        num1 = int(input('Enter a number: '))
+        num2 = int(input('Enter a number: '))
+        result = num1 * num2
+        print("Your Answer: {}".format(result))
+    elif oper == 'D':
+        num1 = int(input('Enter a number: '))
+        num2 = int(input('Enter a number: '))
+        result = num1 / num2
+        print("Your Answer: {}".format(result))
+    elif oper == repeat:
+        break
+    
+
